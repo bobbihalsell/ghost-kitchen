@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHOST KITCHEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Prata&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZK0L92K8E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZZK0L92K8E');
+    </script>
+</head>
+
+<body>
+    
+    <header class="home">
+        <a href="index.html"><img class="logolong" src="img/logolongwhite.png" alt="ghost kitchen for food delivery in new york city"></a>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="restaurants.html"><b>Restaurants</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <a href="order.html" class="btn white main-btn"><b>order now</b></a>
+    </header>
+
+    <div class="row">
+        <div class="text-box col col-40">
+            <h1>Multiple Restaurants.<br>One Place.</h1>
+            <h4>NEW food hall in NYC.</h4>
+            <a href="restaurants.html" class="btn red"><b>see the restaurants</b></a>
+        </div>
+        <div class="col col-40">
+            <img class="img-t2" src="img/main.png" alt="burger">
+        </div>
+    </div>
+
+    <div class="details1">
+        <h3>Order on grubhub, ubereats or deliveroo.</h3>
+        <h3>Order from any restaurant and combine the delivery!</h3>
+    </div>
+    
+    <div class="details2 row">
+        <div class="text-box col col-30">
+            <h1>BURGERS</h1>
+            <img class="img-t1" src="img/burger4.png" alt="burger">
+            <a href="brick-burger.html"><b>Brick Burger</b></a>
+            <h4>Delicious Burgers & Fries.</h4>
+
+        </div>
+
+        <div class="text-box col col-30">
+            <h1>COCKTAILS</h1>
+            <img class="img-t1" src="img/cocktail1.png" alt="cocktails">
+            <a href="magic-lounge.html"><b>Magic Lounge</b></a>
+            <h4>Cocktails, Nibbles & Charcuterie.</h4>
+
+        </div>
+
+        <div class="text-box col col-30">
+            <h1>DESSERTS</h1>
+            <img class="img-t1" src="img/dessert1.png" alt="desserts">
+            <a href="scrumptious.html"><b>Scrumptious</b></a>
+            <h4>Desserts & Cakes, Individually made.</h4>
+
+        </div>
+    </div>
+
+    <!--- footer --->
+
+    <footer>
+        <div class="row">
+            <div class="col left">
+                <h3>GhoSt Kitchen</h3>
+                <p>Great Food, Any Occasion!</p> 
+            </div>
+
+            <div class="col right">
+                <p>5 E 47th St, New York, NY 10011</p>
+                <p>Order Delivery or Pickup</p>
+                <a href="order.html">Order here</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

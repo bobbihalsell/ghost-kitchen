@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHOST KITCHEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Prata&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZK0L92K8E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZZK0L92K8E');
+    </script>
+</head>
+
+<body>
+    
+    <header class="home">
+        <a href="index.html"><img class="logolong" src="img/logolongwhite.png" alt="ghost kitchen for food delivery in new york city"></a>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="restaurants.html"><b>Restaurants</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <a href="order.html" class="btn white main-btn"><b>order now</b></a>
+    </header>
+
+        <div class="places">
+            <div class="row">
+                <div class="col col-30">
+                    <a class="title" href="brick-burger.html">BRICK BURGER</a>
+                    <img class="img-t1" src="img/burger2.png" alt="burgers for takeaway and delivery nyc">
+                    <a href="brick-burger.html"><h3>Burgers. Simple & Delicious.</h3></a>
+                    <p>Our passion is crafting classic burgers with quality ingredients and a focus on  great taste. We take pride in grilling our Angus beef patties to perfection and pairing them with fresh, crisp toppings.</p>
+                </div>
+    
+                <div class="col col-30">
+                    <a class="title" href="magic-lounge.html">MAGIC LOUNGE</a>
+                    <img class="img-t1" src="img/cocktail2.png" alt="cocktails and charcuterie for takeaway and delivery nyc">
+                    <a href="magic-lounge.html"><h3>Cocktails & Nibbles.</h3></a>
+                    <p>Our creative cocktails to go are designed to add a touch of magic to your evenings. Pair them with our thoughtfully curated nibbles for a complete experience that's perfect for sipping at home or on the go.</p>
+
+                </div>
+    
+                <div class="col col-30">
+                    <a class="title" href="scrumptious.html">SCRUMPTIOUS</a>
+                    <img class="img-t1" src="img/dessert2.png" alt="artisian desserts for takeaway and delivery nyc">
+                    <a href="scrumptious.html"><h3>Delectable Desserts.</h3></a>
+                    <p>Enjoy gourmet single-serving desserts, bringing a touch of indulgence to your at home dining experience. Whether you're celebrating a special moment or simply indulging in a sweet craving, we're is here for any occasion.</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!--- footer --->
+
+    <footer>
+        <div class="row">
+            <div class="col left">
+                <h3>GhoSt Kitchen</h3>
+                <p>Great Food, Any Occasion!</p> 
+            </div>
+
+            <div class="col right">
+                <p>5 E 47th St, New York, NY 10011</p>
+                <p>Order Delivery or Pickup</p>
+                <a href="order.html">Order here</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

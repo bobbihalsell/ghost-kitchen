@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHOST KITCHEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Prata&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZK0L92K8E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZZK0L92K8E');
+    </script>
+</head>
+
+<body>
+    
+    <header class="home">
+        <a href="index.html"><img class="logolong" src="img/logolongwhite.png" alt="ghost kitchen for food delivery in new york city"></a>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="restaurants.html"><b>Restaurants</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <a href="order.html" class="btn white main-btn"><b>order now</b></a>
+    </header>
+
+    <div class="brick">
+        <div class="menu">
+            <img src="img/brick-burger-menu-l.png">
+        </div>
+
+        <div class="places-link">
+            <a href="restaurants.html">see the other restaurants</a>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class="img-t3" src="img/burger3.png" alt="burger">
+            </div>
+            <div class="col">
+                <img class="img-t3" src="img/burger4.png" alt="burger">
+            </div>
+            <div class="col">
+                <img class="img-t3" src="img/burger5.png" alt="burger">
+            </div>
+        </div>
+    </div>
+
+
+    <!--- footer --->
+
+    <footer>
+        <div class="row">
+            <div class="col left">
+                <h3>GhoSt Kitchen</h3>
+                <p>Great Food, Any Occasion!</p> 
+            </div>
+
+            <div class="col right">
+                <p>5 E 47th St, New York, NY 10011</p>
+                <p>Order Delivery or Pickup</p>
+                <a href="order.html">Order here</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
