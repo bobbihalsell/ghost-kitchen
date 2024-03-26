@@ -49,7 +49,7 @@ p {
 
 .nav-links ul li a{
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .nav-links ul li::after{
@@ -146,17 +146,19 @@ nav .fa{
 }
 
 .row{
-    margin-top: 2%;
+    margin: 0% auto;
+    padding: 0 auto;
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 2% auto;
 }
+
 
 @media(max-width: 750px){
     .row{
         flex-direction: column;
     }
+
 }
 
 .col{
@@ -170,8 +172,38 @@ nav .fa{
     display: inline;
 }
 
+.col-60{
+    flex-basis: 60%;
+    margin: 0.6%;
+    padding: 0;
+}
+
+.col-60 img{
+    padding: 0 auto 10%;
+    margin: 0 auto;
+}
+
+.col-60 a{
+    padding: 0 auto;
+    margin: 0 auto ;
+}
+
+.col-60 h4{
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.col-50{
+    flex-basis: 50%;
+    margin: 0.6%;
+    padding: 0;
+}
+
 .col-40{
     flex-basis: 40%;
+    margin-bottom: 5%;
+
 }
 
 .col-30{
@@ -184,25 +216,24 @@ nav .fa{
 
 .text-box{
     color: #4a7288;
-    margin: 6% auto 0;
+    margin: 5% auto 0%;
 }
 
-.col-40{
-    margin-bottom: 5%;
-}
 
 .col-40 h1{
     margin-bottom: 0;
-    margin-top: 5%;
+    margin-top: 15%;
+    font-size: 2.5rem;
 }
 
 .text-box h4{
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     margin: 20px 0 30px;
 }
 
 .text-box a{
     color: #14445e;
+    font-size: 1rem;
 }
 
 .text-box a:hover{
@@ -274,7 +305,6 @@ nav .fa{
 
 /*---- box-shadow: 0 4px 8px 0 rgba(74, 114, 136, 0.4), 0 6px 20px 0 rgba(74, 114, 136, 0.4); ----*/
 
-
 .img-t2{
     width: 100%;
     margin: 8% auto;
@@ -321,7 +351,7 @@ footer h4{
 footer p{
     margin: auto;
     padding: 0;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
 }
 
 footer a{
@@ -385,12 +415,22 @@ footer .row{
 }
 
 .details1 h3{
-    margin: 1% auto;
-    font-size: 0.9rem;
+    margin: 3% auto;
+    font-size: 1.2rem;
 }
 
 .details2{
     margin-top: 0;
+}
+
+.details2 a{
+    font-size: 0.9rem;
+    margin-bottom: 0%;
+}
+
+.details2 h4{
+    margin-top: 0;
+    font-size: 0.8rem;
 }
 
 
@@ -432,80 +472,6 @@ footer .row{
 }
 
 
-/*---- menu ----*/
-
-.menu{
-    text-align: center;
-}
-
-.menu img{
-    width: 50%;
-}
-
-.brick{
-    background: #ffe6f3;
-}
-
-.brick a{
-    color: #841C00;
-}
-
-.brick a:hover{
-    font-weight: 1000;
-    text-shadow: 1px 1px 2px #c67862;
-}
-
-.magic{
-    background: #320542;
-}
-
-.magic a{
-    color: #FFF9E8;
-}
-
-.magic a:hover{
-    font-weight: 1000;
-    text-shadow: 1px 1px 2px #e4dbc0;
-}
-
-.scrumpt{
-    background: #F8F5ED;
-}
-
-.scrumpt a{
-    color: #AF3069;
-}
-
-.scrumpt a:hover{
-    font-weight: 1000;
-    text-shadow: 1px 1px 2px #d995b4;
-}
-
-.places-link{
-    text-align: center;
-    padding-bottom: 1%;
-}
-
-.brick a{
-    color: #841C00;
-}
-
-.brick a:hover{
-    font-weight: 1000;
-    text-shadow: 1px 1px 2px #c67862;
-}
-
-@media(max-width: 750px){
-
-    .img-t3{
-        width: 50%;
-    }
-
-    .menu img{
-        width: 100%;
-    }
-
-}
 
 /*---- order ----*/
 
@@ -513,17 +479,16 @@ footer .row{
     text-align: center;
     color: #335c72;
     display: block;
-    padding: 1.8%;
+    padding: 0 0 5%;
     background: #dce6eb;
     overflow: hidden;
 }
 
 .order-row{
-    margin-top: 2%;
     display: flex;
     justify-content: space-between;
-    width: 70%;
-    margin: 2% auto;
+    width: 90%;
+    margin: 0% auto;
 }
 
 @media(max-width: 750px){
@@ -532,47 +497,7 @@ footer .row{
     }
 }
 
-.order h3{
-    margin-bottom: 0%;
+.order a{
+    margin: 0%;
+    font-size: 1.6rem;
 }
-
-.order-btn{
-    background: none;
-    padding: 12px 24px;
-    position: relative;
-    font-size: 1rem;
-    border-radius: 30px;
-    margin: 18% auto;
-    display: block;
-    width: 60%;
-    font-family: 'Noto Sans Display', sans-serif !important;
-}
-
-.grubhub{
-    border: 1px solid #000;
-    color: #000;
-    background-color: #F1843B;
-}
-
-.order-btn:hover{
-    border: 1px solid #fff;
-    color: white;
-    transition: 0.1s;
-}
-
-.ubereats{
-    border: 1px solid #000;
-    color: #000;
-    background-color: #55BA6F;
-}
-
-.deliveroo{
-    border: 1px solid #000;
-    color: #000;
-    background-color:  #57C8BE;
-}
-
-.order p{
-    margin-bottom: 2%;
-}
-
